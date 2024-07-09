@@ -1,4 +1,4 @@
-# Análisis de Pulsos Experimentales para osciloscpio Teledyne Lecroy
+# Análisis de Pulsos Experimentales para osciloscopio Teledyne Lecroy
 
 Este repositorio contiene código para el análisis y visualización de datos de pulsos experimentales. Los datos se leen de archivos de texto (.txt), donde cada archivo contiene datos de un solo pulso. Estos datos deben unirse para formar gráficos completos y realizar un análisis detallado. A continuación, se detallan las diferentes funcionalidades implementadas:
 
@@ -8,6 +8,14 @@ Código diseñado para leer y organizar datos experimentales de archivos de text
 - **Funciones para extracción de datos**: `parse_header()` para metadatos y `extract_data()` para convertir datos en DataFrame.
 - **Estructuras de datos para organización**: Uso de diccionarios para agrupar datos por canales y pulsos, facilitando el acceso y manejo.
 - **Procesamiento y acceso automatizado**: Iteración sobre archivos de un directorio, extracción y almacenamiento estructurado, con ejemplo de acceso a los datos.
+
+## Análisis de Pulsos en Ruido
+
+Este código analiza pulsos que se encuentran en datos con ruido, identificando y extrayendo características relevantes para su análisis detallado. Se utilizan técnicas avanzadas para filtrar y diferenciar pulsos útiles de ruido de fondo.
+
+## Generación de Histogramas en Formato ROOT
+
+El código para la generación de histogramas procesa los datos experimentales para crear histogramas detallados en formato ROOT, comúnmente utilizado en física de partículas y análisis de datos de alta energía. Esta funcionalidad es esencial para visualizar la distribución y características de los pulsos analizados.
 
 ## Visualización de Pulsos Filtrados por Canal
 
@@ -59,6 +67,7 @@ Este código agrupa y visualiza la amplitud promedio de pulsos corregidos por ca
 - Pandas
 - NumPy
 - Matplotlib
+- PyROOT (para la generación de histogramas en formato ROOT)
 
 ## Uso
 
